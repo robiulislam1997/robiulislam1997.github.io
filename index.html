@@ -82,12 +82,12 @@ ul.task-list li input[type="checkbox"] {
     font-weight: 600;
     margin-top: 0;
 }
-.social-icon-link:hover {
+/* .social-icon-link:hover {
     color: #1976d2;
     background: rgba(25, 118, 210, 0.08);
     transform: translateY(-3px);
-}
-.social-icon-link:hover i {
+} */
+/* .social-icon-link:hover i {
     transform: scale(1.3);
     color: #1976d2;
 }
@@ -96,6 +96,44 @@ ul.task-list li input[type="checkbox"] {
     opacity: 1;
     max-height: 20px;
     margin-top: 4px;
+} */
+
+/* Custom HTML for Robiul */
+.btn-badge {
+    background-color: #b509ac;
+    color: White;
+    border: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    margin: .2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9375rem;
+    border-radius: .25rem;
+    transition: all .15s ease-in-out;
+    line-height: 1.5;
+}
+.fancy-container {
+  background: color-mix(in srgb, var(--global-theme-color)
+  #B509AC 4%, var(--global-card-bg-color));
+  border: 1px solid 
+  color-mix(in srgb, var(--global-theme-color) 16%, transparent);
+    border-radius: .75rem;
+    padding: 1.2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.chat_with_me {
+  width: auto;
+  height: auto;
+  border: 1px solid #b509ac;
+  background-color: 
+  color-mix(in srgb, #b509ac 5%,White );
+}
+.link {
+  color:#b509ac; text-decoration: underline; font-weight: 700;
 }
 </style>
 
@@ -324,7 +362,7 @@ gtag('event', 'page_view', {
   </li> 
 <li class="nav-item">
 <a class="nav-link" href="https://drive.google.com/file/d/1iFQZNsQg9aUKIhkP00-84NAr-MtBR7jk/view?usp=sharing" target="_blank"> 
-<span class="menu-text">Resume</span></a>
+<span class="menu-text">CV</span></a>
 </li>  
 <li class="nav-item">
 <a class="nav-link active" href="/service" aria-current="page"> 
@@ -382,7 +420,7 @@ gtag('event', 'page_view', {
 <tbody>
 <tr class="odd">
 <td><i class="fas fa-envelope" data-qmd=""></i></td>
-<td style="text-align: right;">miislam [at] wm [dot] edu</td>
+<td style="text-align: right;">miislam@wm.edu</td>
 </tr>
 <tr class="odd">
 <td><i class="fas fa-building" data-qmd=""></i></td>
@@ -392,18 +430,19 @@ gtag('event', 'page_view', {
 <td colspan="2" style="text-align: center; border: none;">
   <!-- Links of the social site -->
   <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2px;">
-    <a href="https://scholar.google.com/citations?user=W_Z7cCUAAAAJ&hl=en" target="_blank" class="social-icon-link" title="Google Scholar">
-      <i class="ai ai-google-scholar"></i>
-      <span class="social-icon-label">Scholar</span>
+   <div>
+    <a href="https://scholar.google.com/citations?user=W_Z7cCUAAAAJ&hl=en" target="_blank" class="btn-badge" title="Google Scholar">
+      Google Scholer
     </a>
-    <a href="https://github.com/robiul-islam-rubel" target="_blank" onclick="trackExternalLink('https://github.com/taminulislam', 'GitHub')" class="social-icon-link" title="GitHub">
-      <i class="fab fa-github"></i>
-      <span class="social-icon-label">GitHub</span>
+    <!-- <p>Google Scholer</p> -->
+   </div>
+    <a href="https://github.com/robiulislam1997" target="_blank" onclick="trackExternalLink('https://github.com/taminulislam', 'GitHub')" class="btn-badge" title="GitHub">
+      Github
     </a>
-    <a href="https://www.linkedin.com/in/rubel47/" target="_blank" onclick="trackExternalLink('https://www.linkedin.com/in/taminul-islam/', 'LinkedIn')" class="social-icon-link" title="LinkedIn">
+    <!-- <a href="https://www.linkedin.com/in/rubel47/" target="_blank" onclick="trackExternalLink('https://www.linkedin.com/in/taminul-islam/', 'LinkedIn')" class="social-icon-link" title="LinkedIn">
       <i class="bi bi-linkedin"></i>
       <span class="social-icon-label">LinkedIn</span>
-    </a>
+    </a> -->
     <!-- <a href="https://www.researchgate.net/profile/Taminul-Islam" target="_blank" onclick="trackExternalLink('https://www.researchgate.net/profile/Taminul-Islam', 'ResearchGate')" class="social-icon-link" title="ResearchGate">
       <i class="ai ai-researchgate"></i>
       <span class="social-icon-label">ResearchGate</span>
@@ -429,42 +468,9 @@ gtag('event', 'page_view', {
 </div> -->
 
 <!-- Scholar Stats Section -->
-<div id="scholar-stats" style="padding-top: 25px;">
-  
-  <!-- Summary Stats -->
-  <!-- <div style="display: flex; justify-content: space-around; text-align: center; margin-bottom: 15px; padding: 10px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 10px;">
-    <div class="scholar-stat-item">
-      <div id="stat-citations" style="font-size: 1.5em; font-weight: 700; color: #1976d2;">600+</div>
-      <div style="font-size: 0.7em; color: #666; font-weight: 600;">Citations</div>
-    </div>
-    <div class="scholar-stat-item">
-      <div id="stat-hindex" style="font-size: 1.5em; font-weight: 700; color: #e91e63;">14</div>
-      <div style="font-size: 0.7em; color: #666; font-weight: 600;">h-index</div>
-    </div>
-    <div class="scholar-stat-item">
-      <div id="stat-i10" style="font-size: 1.5em; font-weight: 700; color: #ff9800;">18</div>
-      <div style="font-size: 0.7em; color: #666; font-weight: 600;">i10-index</div>
-    </div>
-  </div> -->
+<div class="fancy-container chat_with_me">
+ I am open to meet! Please <a href="mailto:miislam@wm.edu" class="link">Email me</a> to schedule a chat!
 
-  <!-- Publications Chart -->
-  <!-- <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 12px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
-    <h6 style="text-align: center; margin: 0 0 8px 0; font-size: 0.8em; font-weight: 600; color: #444;"><i class="fas fa-file-alt" style="color: #1976d2;"></i> Publications per Year</h6>
-    <canvas id="pubsChart" style="max-height: 160px;"></canvas>
-  </div> -->
-
-  <!-- Citations Chart -->
-  <!-- <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
-    <h6 style="text-align: center; margin: 0 0 8px 0; font-size: 0.8em; font-weight: 600; color: #444;"><i class="fas fa-quote-left" style="color: #e91e63;"></i> Citations per Year</h6>
-    <canvas id="citationsChart" style="max-height: 160px;"></canvas>
-  </div>
-
-  <div style="text-align: center; margin-top: 8px;">
-    <a href="https://scholar.google.com/citations?user=Kgo_S9sAAAAJ&hl=en" target="_blank" style="font-size: 0.7em; color: #999; text-decoration: none;">
-      <i class="ai ai-google-scholar"></i> View full profile on Google Scholar
-    </a>
-    <div id="scholar-last-updated" style="font-size: 0.6em; color: #bbb; margin-top: 2px;"></div>
-  </div> -->
 </div>
 
 </div>
@@ -472,7 +478,7 @@ gtag('event', 'page_view', {
 
 <div class="g-col-12 g-col-sm-8">
   <div id="intro" class="intro">
-    <p>Robiul Islam is a <strong>Doctoral Student in Computer Science</strong> at <strong style="color: #bd2929;"><a href="https://cdsp.wm.edu/" target="_blank" style="color: #bd2929;">School of Computing, Data Science & Physics at </a></strong> <strong style="color: #bd2929;"><a href="https://cdsp.wm.edu/" target="_blank" style="color: #bd2929;">William & Mary</a></strong>, currently a member of <strong style="font-weight: bold;"> <a href="#">BeeSafeRobotics Lab</a></strong> <a href="" target="_blank"><strong style="color: #000000;"></strong></a> and doing research under the supervision of <strong style="color: #ff6600;"><a href="https://treywoodlief.com/" target="_blank" style="color: #ff6600;">Prof. Trey Woodlief, Ph.D.</a></strong>. His research focuses on <strong>Autonomous Systems Safety</strong>, <strong>LLM4AD</strong>, <strong>SE4AD</strong>, and <strong>Perception</strong>. He specializes in building <strong>lightweight, production-ready AI systems</strong> for real-world applications in autonomous systems safety.</p>
+    <p>Robiul Islam is a <strong>Doctoral Student in Computer Science</strong> at <strong><a href="https://cdsp.wm.edu/" target="_blank" class="link">School of Computing, Data Science & Physics at </a></strong> <strong><a href="https://cdsp.wm.edu/" target="_blank">William & Mary</a></strong>, currently a member of <strong> <a href="#" class="link">BeeSafeRobotics Lab</a></strong> <a href="" target="_blank"><strong></strong></a> and doing research under the supervision of <strong><a href="https://treywoodlief.com/" target="_blank" class="link">Prof. Trey Woodlief, Ph.D.</a></strong>. His research focuses on <strong>Autonomous Systems Safety</strong>, <strong>LLM4AD</strong>, <strong>SE4AD</strong>, and <strong>Perception</strong>. He specializes in building <strong>lightweight, production-ready AI systems</strong> for real-world applications in autonomous systems safety.</p>
   </div>
 
   <!-- Research Internship Highlight Section -->
@@ -497,42 +503,42 @@ gtag('event', 'page_view', {
   <table class="table table-striped">
   <tbody>
     <tr>
-      <td style="width: 15%; vertical-align: top;"><strong>June 18, 2026</strong></td>
-      <td><i class="" style="color: #1976d2; margin-right: 8px;"></i> <strong style="color: #e03a3a;">New! </strong> Committee Member in Artifact Evaluation Committee within the Artifact evaluation-track in <a href="https://conf.researchr.org/committee/issta-2026/issta-2026-artifact-evaluation-artifact-evaluation-committee" target="_blank"><strong style="color: #bd2929;">ISSTA - 2026.</strong></a></td>
+      <td style="width: 15%; vertical-align: top;"><strong>Jun 18, 2026</strong></td>
+      <td><i class="" style="color: #1976d2; margin-right: 8px;"></i> <strong style="color: #e03a3a;">New! </strong> Committee Member in Artifact Evaluation Committee within the Artifact evaluation-track in <a href="https://conf.researchr.org/committee/issta-2026/issta-2026-artifact-evaluation-artifact-evaluation-committee" target="_blank"><strong class="link">ISSTA - 2026.</strong></a></td>
     <tr>
     <tr>
-      <td style="width: 15%; vertical-align: top;"><strong>February 27, 2026</strong></td>
-      <td><i class="" style="color: #1976d2; margin-right: 8px;"></i>🎉 Presented <strong>Poster</strong> at <a href="https://sites.google.com/wm.edu/grs-program-2026/schedule-at-a-glance/poster-session?authuser=0" target="_blank"><strong style="color: #bd2929;">Graduate Research Symposium (GRS-26).</strong></a></td>
+      <td style="width: 15%; vertical-align: top;"><strong>Feb 27, 2026</strong></td>
+      <td><i class="" style="color: #1976d2; margin-right: 8px;"></i>🎉 Presented <strong>Poster</strong> at <a href="https://sites.google.com/wm.edu/grs-program-2026/schedule-at-a-glance/poster-session?authuser=0" target="_blank"><strong class="link">Graduate Research Symposium (GRS-26).</strong></a></td>
     <tr>
     <tr>
-      <td style="width: 15%; vertical-align: top;"><strong>February 26-27, 2026</strong></td>
-      <td><i class="" style="color: #1976d2; margin-right: 8px;"></i> 📝 Served as a Tech/AV Subcommittee Chair at <a href="https://sites.google.com/wm.edu/grs-program-2026/home?authuser=0" target="_blank"><strong style="color: #bd2929;">Graduate Research Symposium (GRS-26).</strong></a></td>
+      <td style="width: 15%; vertical-align: top;"><strong>Feb 26, 2026</strong></td>
+      <td><i class="" style="color: #1976d2; margin-right: 8px;"></i> 📝 Served as a Tech/AV Subcommittee Chair at <a href="https://sites.google.com/wm.edu/grs-program-2026/home?authuser=0" target="_blank"><strong class="link">Graduate Research Symposium (GRS-26).</strong></a></td>
     <tr>
       <tr>
-        <td style="width: 15%; vertical-align: top;"><strong>February 2, 2026</strong></td>
+        <td style="width: 15%; vertical-align: top;"><strong>Feb 2, 2026</strong></td>
         <td><i class="fas fa-plane-departure" style="color: #1976d2; margin-right: 8px;"></i>Become Ph.D. <strong style="color: #bd2929;">Candidate.</strong></td>
       <tr>
     <tr>
-      <td style="width: 15%; vertical-align: top;"><strong>October 1, 2025</strong></td>
-      <td><i class="" style="color: #1976d2; margin-right: 8px;"></i> 📝 Served as a Junior PC Member at <a href="https://2026.msrconf.org/committee/msr-2026-junior-pc-technical-papers---junior-program-committee" target="_blank"><strong style="color: #bd2929;">MSR-26</strong></a>, held in Brazil.</td>
+      <td style="width: 15%; vertical-align: top;"><strong>Oct 1, 2025</strong></td>
+      <td><i class="" style="color: #1976d2; margin-right: 8px;"></i> 📝 Served as a Junior PC Member at <a href="https://2026.msrconf.org/committee/msr-2026-junior-pc-technical-papers---junior-program-committee" target="_blank"><strong class="link">MSR-26</strong></a>, held in Brazil.</td>
     <tr>
     <tr>
-      <td style="width: 15%; vertical-align: top;"><strong>September 28, 2025</strong></td>
-      <td><i class="" style="color: #1976d2; margin-right: 8px;"></i> 🚀 Our team <strong>Musketeers</strong> secured <strong>7th</strong> position(by points 5th) at <a href="https://tribectf.cs.wm.edu/" target="_blank"><strong style="color: #bd2929;">TribeCTF 2025</strong></a>, Organized by William and Mary CyberSecurity Center.</td>
+      <td style="width: 15%; vertical-align: top;"><strong>Sep 28, 2025</strong></td>
+      <td><i class="" style="color: #1976d2; margin-right: 8px;"></i> 🚀 Our team <strong>Musketeers</strong> secured <strong>7th</strong> position(by points 5th) at <a href="https://tribectf.cs.wm.edu/" target="_blank"><strong class="link">TribeCTF 2025</strong></a>, Organized by William and Mary CyberSecurity Center.</td>
     <tr>
     <tr>
-      <td style="width: 15%; vertical-align: top;"><strong>November 9, 2024</strong></td>
+      <td style="width: 15%; vertical-align: top;"><strong>Nov 9, 2024</strong></td>
       <td><i class="fas fa-plane-departure" style="color: #1976d2; margin-right: 8px;"></i> Grad Volunteer at <strong>Graduate Student Symposium</strong></td>
     <tr>
-      <td style="width: 15%; vertical-align: top;"><strong>October 1, 2024</strong></td>
+      <td style="width: 15%; vertical-align: top;"><strong>Oct 1, 2024</strong></td>
       <td><i class="fas fa-plane-departure" style="color: #1976d2; margin-right: 8px;"></i> Best Speaker on debate <strong>Is autonomous driving safer/better than human-operated driving?</strong>, Thanks to Prof. Sidi Lu for her wonderful gift</td>
     </tr>
     <tr>
-      <td style="width: 15%; vertical-align: top;"><strong>August 27, 2024</strong></td>
+      <td style="width: 15%; vertical-align: top;"><strong>Aug 27, 2024</strong></td>
       <td><i class="fas fa-plane-departure" style="color: #1976d2; margin-right: 8px;"></i> Started Graduate Teaching Assistant at Dept. of <strong>Computer Science</strong></td>
     </tr>
     <tr>
-      <td style="width: 15%; vertical-align: top;"><strong>August 25, 2024</strong></td>
+      <td style="width: 15%; vertical-align: top;"><strong>Aug 25, 2024</strong></td>
       <td><i class="fas fa-plane-departure" style="color: #1976d2; margin-right: 8px;"></i> Started my Ph.D. at <strong>William and Mary</strong></td>
     </tr>
 
@@ -548,7 +554,7 @@ gtag('event', 'page_view', {
   
   <div id="intro">
     <p>
-      My journey into research began during my fourth year of undergraduate studies, when I became deeply enthuasiastic about the transformative potential of artificial intelligence and machine learning. This passion led me to pursue a PhD in Computer Science at William and Mary, where I have been fortunate to work under the mentorship of <strong style="color: #ff6600;"><a href="https://treywoodlief.com/" target="_blank" style="color: #ff6600;">Dr. Trey Woodlief</a></strong>. My research has been driven by a desire to develop practical AI solutions that can make a tangible impact on real-world problems, particularly in the domains of autonomous systems safety and security.
+      My journey into research began during my fourth year of undergraduate studies, when I became deeply enthuasiastic about the transformative potential of artificial intelligence and machine learning. This passion led me to pursue a PhD in Computer Science at William and Mary, where I have been fortunate to work under the mentorship of <strong style="color: #ff6600;"><a href="https://treywoodlief.com/" target="_blank" class="link">Dr. Trey Woodlief</a></strong>. My research has been driven by a desire to develop practical AI solutions that can make a tangible impact on real-world problems, particularly in the domains of autonomous systems safety and security.
 
     </p>
   
